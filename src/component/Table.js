@@ -2,8 +2,8 @@ import React from 'react'
 
 function Table() {
   return (
-    <div >
-        <table style={{width:"500px"}} border ="1">
+    <div style={{padding:"30px"}}>
+        <table style={{width:"500px",margin:"auto"}} border ="1">
         <thead>
             <tr>
             <th>Id</th>

@@ -7,21 +7,21 @@ import Table from './component/Table';
 import Todo from './component/Todo';
 
 function App() {
-  const [state,setState]= useState("true");
+  const [state, setState] = useState(true);
   return (
     <div className="App">
-     <div style={{display:"flex",justifyContent:"space-evenly",
-     margin:"auto",
-     padding:"40px"
-     }}>
-       <Card />
-      <Table />
-     
-      </div>
-      <button onClick={()=>{
-        setState("false")
-      }}>show card</button>
-      <button>show Table</button>
+      {state ? <Card /> : <Table />}
+      <button onClick={() =>{
+        setState(true)
+      }
+        
+      }>show card</button>
+      <button onClick={() =>
+      {
+        setState(false)
+      }
+        
+      }>show Table</button>
       {/* <Counter />
       <Todo /> */}
 
