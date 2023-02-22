@@ -8,16 +8,18 @@ import Props from './component/Props';
 import Table from './component/Table';
 import Todo from './component/Todo';
 
-function Greeting(props) {
-  return <h1>Hello, {props.name}!</h1>;
+function Greeting(props){
+  return <h1>Hello {props.name}</h1>
+
 }
 
 function App() {
+
   const [state, setState] = useState(true);
   return (
     <div className="App">
-      <Greeting name="Alice" />
-      <Greeting name="Bob" />
+      <Greeting name="Prerna"></Greeting>
+      
       
       {state ? <Card /> : <Table />}
       <button onClick={() =>{
