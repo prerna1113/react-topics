@@ -1,42 +1,27 @@
 
-import { useState } from 'react';
+
 import './App.css';
-import Card from './component/Card';
-import Counter from './component/Counter';
-import Props from './component/Props';
 
-import Table from './component/Table';
-import Todo from './component/Todo';
+// import Counterr from './Counterr';
+import Nav from './component/State-Api/Nav';
+import Profile from './component/State-Api/Profile';
 
-function Greeting(props){
-  return <h1>Hello {props.name}</h1>
 
-}
+
+// function Greeting(props){
+//   return <h1>Hello {props.name}</h1>
+
+// }
 
 function App() {
 
-  const [state, setState] = useState(true);
+
   return (
     <div className="App">
-      <Greeting name="Prerna"></Greeting>
+      {/* <Counterr/> */}
+      <Nav/>
+      <Profile />
       
-      
-      {state ? <Card /> : <Table />}
-      <button onClick={() =>{
-        setState(true)
-      }
-        
-      }>show card</button>
-      <button onClick={() =>
-      {
-        setState(false)
-      }
-        
-      }>show Table</button>
-      {/* <Counter />
-      <Todo /> */}
-      {/* <Props/> */}
-
     </div>
   );
 }

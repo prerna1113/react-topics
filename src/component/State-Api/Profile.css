@@ -1,0 +1,9 @@
+.card{
+
+    width:50%;
+    height:350px;
+    display: flex;
+    margin: 20px auto;
+    box-shadow: 0 0 10px black;
+
+}
