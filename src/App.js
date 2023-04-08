@@ -7,6 +7,7 @@ import Profile from './component/Api/Profile';
 import Text from './component/Child-Parent/Text';
 import Card from './component/Phases/Card';
 import Table from './component/Phases/Table';
+import { useState } from 'react';
 
 // import Input from './component/Parent-Child/Input';
 
@@ -22,19 +23,28 @@ import Table from './component/Phases/Table';
 // }
 
 function App() {
+  const [data,setData]=useState("true");
 
 
   return (
     <div className="App">
       <Navbar/>
-      <Card />
-      <Table />
+      
       {/* <Text /> */}
       {/* <Input /> */}
       {/* <Profile/> */}
       {/* <Counterr/> */}
       {/* <Nav/>
       <Profile /> */}
+      {data ? <Card /> : <Table />}
+      <div style={{textAlign:"center"}}>
+        <button 
+        onClick={()=>{setData(false)}}>Show table</button>
+
+        <button  
+         onClick={()=>{setData(true)}}
+         >Show card</button>
+      </div>
       
     </div>
   );
