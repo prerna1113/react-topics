@@ -6,6 +6,7 @@ import nav from './component/Api/Navbar';
 import Profile from './component/Api/Profile';
 import Text from './component/Child-Parent/Text';
 import Card from './component/Phases/Card';
+import Table from './component/Phases/Table';
 
 // import Input from './component/Parent-Child/Input';
 
@@ -27,6 +28,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Card />
+      <Table />
       {/* <Text /> */}
       {/* <Input /> */}
       {/* <Profile/> */}
