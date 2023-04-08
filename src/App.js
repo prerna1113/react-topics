@@ -5,6 +5,8 @@ import Navbar from './component/Api/Navbar';
 import nav from './component/Api/Navbar';
 import Profile from './component/Api/Profile';
 import Text from './component/Child-Parent/Text';
+import Card from './component/Phases/Card';
+
 // import Input from './component/Parent-Child/Input';
 
 // import Counterr from './Counterr';
@@ -24,7 +26,8 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Text />
+      <Card />
+      {/* <Text /> */}
       {/* <Input /> */}
       {/* <Profile/> */}
       {/* <Counterr/> */}
