@@ -4,7 +4,8 @@ import './App.css';
 import Navbar from './component/Api/Navbar';
 import nav from './component/Api/Navbar';
 import Profile from './component/Api/Profile';
-import Input from './component/Parent-Child/Input';
+import Text from './component/Child-Parent/Text';
+// import Input from './component/Parent-Child/Input';
 
 // import Counterr from './Counterr';
 // import Nav from './component/State-Api/Nav';
@@ -23,7 +24,8 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Input />
+      <Text />
+      {/* <Input /> */}
       {/* <Profile/> */}
       {/* <Counterr/> */}
       {/* <Nav/>
