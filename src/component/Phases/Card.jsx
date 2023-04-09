@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
 
 function Card() {
     const [state,setState]=useState({
@@ -6,6 +6,7 @@ function Card() {
         title:"Car Image"
     }
     )
+    useEffect(()=>{})
     const chngCard=()=>{
         setState({
             image:"https://bd.gaadicdn.com/processedimages/yamaha/mt-15-2-0/source/mt-15-2-062e4b1d700b63.jpg?tr=w-375",
