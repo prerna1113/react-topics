@@ -1,11 +1,12 @@
-import {useState} from 'react'
+import {useState,useRef} from 'react'
 import styles from './Counter.module.css'
 
 function Counter() {
   const[state,setState]= useState(0);
+  const ref1=useRef();
 
   const IncreaseValue=()=>{
-    setInterval(()=>{
+   ref1.current= setInterval(()=>{
 
       setState((prevState)=>prevState+1)
     },1000)
@@ -13,6 +14,7 @@ function Counter() {
 
 
   const StopValue=()=>{
+    clearInterval(ref1.current);
     
   }
   return (
