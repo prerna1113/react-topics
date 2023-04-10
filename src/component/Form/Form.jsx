@@ -22,11 +22,11 @@ function Form() {
         </div>
         <br></br>
         <div>
-            <input type="text" placeholder="Enter Email"  ref={emailRef}/>
+            <input type="Email" placeholder="Enter Email"  ref={emailRef}/>
         </div>
         <br></br>
         <div>
-            <input type="text" placeholder="Enter Password"  ref={passwordRef}/>
+            <input type="password" placeholder="Enter Password"  ref={passwordRef}/>
         </div>
         <br></br>
         <div>

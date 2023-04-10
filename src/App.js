@@ -11,6 +11,7 @@ import { useState } from 'react';
 import Counter from './component/Timer/Counter';
 import Dom from './component/Dom/Dom';
 import Form from './component/Form/Form';
+import ControlledComponent from './component/Form/ControlledComponent';
 
 
 // import Input from './component/Parent-Child/Input';
@@ -33,11 +34,10 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Counter />
+      <ControlledComponent />
+      {/* <Counter />
       <Dom />
-      <Form />
-     
-      
+      <Form /> */}
       {/* <Text /> */}
       {/* <Input /> */}
       {/* <Profile/> */}
