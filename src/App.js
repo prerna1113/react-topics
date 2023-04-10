@@ -9,6 +9,7 @@ import Card from './component/Phases/Card';
 import Table from './component/Phases/Table';
 import { useState } from 'react';
 import Counter from './component/Timer/Counter';
+import Dom from './component/Dom/Dom';
 
 
 // import Input from './component/Parent-Child/Input';
@@ -32,6 +33,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Counter />
+      <Dom />
      
       
       {/* <Text /> */}
