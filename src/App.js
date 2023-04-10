@@ -8,6 +8,8 @@ import Text from './component/Child-Parent/Text';
 import Card from './component/Phases/Card';
 import Table from './component/Phases/Table';
 import { useState } from 'react';
+import Counter from './component/Timer/Counter';
+
 
 // import Input from './component/Parent-Child/Input';
 
@@ -29,6 +31,8 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
+      <Counter />
+     
       
       {/* <Text /> */}
       {/* <Input /> */}
@@ -36,15 +40,15 @@ function App() {
       {/* <Counterr/> */}
       {/* <Nav/>
       <Profile /> */}
-      {data ? <Card /> : <Table />}
+      {/* {data ? <Card /> : <Table />}
       <div style={{textAlign:"center"}}>
         <button 
         onClick={()=>{setData(false)}}>Show table</button>
 
         <button  
          onClick={()=>{setData(true)}}
-         >Show card</button>
-      </div>
+         >Show card</button> */}
+      {/* </div> */}
       
     </div>
   );
