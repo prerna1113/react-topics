@@ -10,6 +10,7 @@ import Table from './component/Phases/Table';
 import { useState } from 'react';
 import Counter from './component/Timer/Counter';
 import Dom from './component/Dom/Dom';
+import Form from './component/Form/Form';
 
 
 // import Input from './component/Parent-Child/Input';
@@ -34,6 +35,7 @@ function App() {
       <Navbar/>
       <Counter />
       <Dom />
+      <Form />
      
       
       {/* <Text /> */}
