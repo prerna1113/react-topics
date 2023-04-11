@@ -2,7 +2,10 @@ import React from 'react'
 
 function ChildText() {
   return (
-    <div>ChildText</div>
+    <div>
+        <h2>Text Component</h2>
+        <input type="text" placeholder="Enter some text"/>
+    </div>
   )
 }
 
