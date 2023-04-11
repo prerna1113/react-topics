@@ -12,6 +12,7 @@ import Counter from './component/Timer/Counter';
 import Dom from './component/Dom/Dom';
 import Form from './component/Form/Form';
 import ControlledComponent from './component/Form/ControlledComponent';
+import ParentChild from './component/REVISION/ParentChild';
 
 
 // import Input from './component/Parent-Child/Input';
@@ -34,7 +35,8 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <ControlledComponent />
+      <ParentChild />
+      {/* <ControlledComponent /> */}
       {/* <Counter />
       <Dom />
       <Form /> */}
