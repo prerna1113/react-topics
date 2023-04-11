@@ -2,8 +2,10 @@ import {useState} from 'react'
 import Text from './Text'
 
 function ParentChild(props) {
+  const [input,setInput]=useState("no data");
   const [state,setState]=useState("no data");
   const submitData=()=>{
+    setState(input);
     
   }
   return (
@@ -11,7 +13,7 @@ function ParentChild(props) {
     
     }}>
       <input type="Text" placeholder="Enter Some Text" 
-       onChange={(e)=>{setState(e.target.value)}}
+       onChange={(e)=>{setInput(e.target.value)}}
        />
       <br></br>
       <br></br>
