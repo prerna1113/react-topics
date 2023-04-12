@@ -2,12 +2,16 @@ import {useState} from 'react'
 
 function ChildInput(props) {
   const [data,setData]=useState();
+  const getData=()=>{
+   props.sendData(data);
+  }
   return (
     <div>
-      <input type="text" placeholder="Enter some text" />
+      <input type="text" placeholder="Enter some text" 
+      onChange={(e)=>{setData(e.target.value)}} />
       <br></br>
       <br></br>
-      <button>Submit</button>
+      <button onClick={getData}>Submit</button>
     </div>
   )
 }
