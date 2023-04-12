@@ -14,6 +14,7 @@ import Form from './component/Form/Form';
 import ControlledComponent from './component/Form/ControlledComponent';
 import ParentChild from './component/REVISION/ParentChild';
 import Input from './component/Parent-Child/Input';
+import ChildText from './component/REVISION/ChildText';
 
 
 // import Input from './component/Parent-Child/Input';
@@ -37,6 +38,7 @@ function App() {
     <div className="App">
       <Navbar/>
       <Input />
+      <ChildText />
       {/* <ParentChild /> */}
       {/* <ControlledComponent /> */}
       {/* <Counter />
