@@ -16,20 +16,23 @@ import ParentChild from './component/REVISION/ParentChild';
 import Input from './component/Parent-Child/Input';
 import ChildText from './component/REVISION/ChildText';
 import A from './component/Context/A';
+ import Myapp from './component/reactTutorial/Myapp';
+
 
 
 // import Input from './component/Parent-Child/Input';
 
-// import Counterr from './Counterr';
-// import Nav from './component/State-Api/Nav';
+import Counterr from './Counterr';
+import Nav from './component/State-Api/Nav';
+import Button from './component/reactTutorial/Button';
 // import Profile from './component/State-Api/Profile';
 
 
 
-// function Greeting(props){
-//   return <h1>Hello {props.name}</h1>
+function Greeting(props){
+  return <h1>Hello {props.name}</h1>
 
-// }
+}
 
 function App() {
   const [data,setData]=useState("true");
@@ -37,30 +40,42 @@ function App() {
 
   return (
     <div className="App">
+
+
+
+      
+      <div>
+        <h1>Welcome to My App</h1>
+        <Button />
+        <Button />
+        <Myapp />
+      </div>
+    
       <Navbar/>
-      <A />
-      {/* <Input />
-      <ChildText /> */}
-      {/* <ParentChild /> */}
-      {/* <ControlledComponent /> */}
-      {/* <Counter />
+      <A /> 
+       <Input />
+      <ChildText /> 
+     <ParentChild /> 
+      <ControlledComponent />
+      <Form />  
+     <Counter />
       <Dom />
-      <Form /> */}
-      {/* <Text /> */}
-      {/* <Input /> */}
-      {/* <Profile/> */}
-      {/* <Counterr/> */}
-      {/* <Nav/>
-      <Profile /> */}
-      {/* {data ? <Card /> : <Table />}
+     
+       <Text />
+       <Input /> 
+     <Profile/> 
+       <Counterr/> 
+       <Nav/>
+      <Profile /> 
+       {data ? <Card /> : <Table />}
       <div style={{textAlign:"center"}}>
         <button 
         onClick={()=>{setData(false)}}>Show table</button>
 
         <button  
          onClick={()=>{setData(true)}}
-         >Show card</button> */}
-      {/* </div> */}
+         >Show card</button> 
+       </div>
       
     </div>
   );
