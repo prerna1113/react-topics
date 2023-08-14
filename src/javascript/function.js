@@ -35,3 +35,51 @@ function showMe(a){
 }
 console.log(aa);
 
+// Passing a function to the another function
+
+function addition(a,b){
+    return a+b;
+}
+let sum = addition;
+
+function average(a,b,fn){
+    return fn(a,b)/2;
+}
+
+console.log(average(10,20,sum));
+
+
+// compare function
+
+
+function compareBy(propertyName){
+    return function (a,b){
+        let x = a[propertyName];
+        let y = b[propertyName];
+
+        if(x > y) {
+            return -1;
+        }
+        else if(x < y){
+            return 1;
+        }
+    return 0;
+    }
+}
+
+let products = [
+    {name:"samsumg",price:"200"},
+    {name: "vivo" , price: "400"},
+    {name: "iphone" , price: "400000"}
+]
+
+console.log('Products sorted by Name');
+
+products.sort(compareBy('name'));
+
+console.log(products);
+
+console.log('Products sorted by Price');
+
+products.sort(compareBy('price'));
+console.table(products);
