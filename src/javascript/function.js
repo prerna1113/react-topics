@@ -115,3 +115,38 @@ function increaseAge(obj){
 increaseAge(person);
 console.log(person.age);
 
+// Recursive Function
+
+function countDown(fromNumber){
+    console.log(fromNumber);
+
+    let NextNumber = fromNumber -1 ;
+
+if(NextNumber >=0){
+    countDown(NextNumber);
+
+}
+}
+
+countDown(10);
+
+
+// let countDown = function f (fromNumber) {
+//     console.log(fromNumber);
+
+//     let NextNumber  = fromNumber - 1 ;
+
+//     if(NextNumber > 0){
+//         f(NextNumber);
+//     }
+// }
+
+// let newYear = countDown;
+// countDown = null;
+// newYear(10);
+
+
+
+
+
+
