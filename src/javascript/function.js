@@ -83,3 +83,35 @@ console.log('Products sorted by Price');
 
 products.sort(compareBy('price'));
 console.table(products);
+
+
+let print = (message)=>{
+    console.log("Print me");
+    return message;
+}
+console.log(print("I am message"));
+
+// Pass by value
+
+function square(x){
+    return x*x;
+}
+let y=10;
+
+console.log(square(y));
+console.log(y);
+
+// Pass By reference
+
+let person ={
+    name:   'John',
+    age:22
+}
+
+function increaseAge(obj){
+    obj.age += 1;
+    return obj;
+}
+increaseAge(person);
+console.log(person.age);
+
