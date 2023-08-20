@@ -26,6 +26,7 @@ import { useState } from 'react';
 // import Nav from './component/State-Api/Nav';
 // import Button from './component/reactTutorial/Button';
 import Registration from './component/FormValidation/Registration';
+import Try from './component/FormValidation/Try';
 // import Profile from './component/State-Api/Profile';
 
 
@@ -43,6 +44,7 @@ function App() {
     <div className="App">
 
       <Registration />
+      {/* <Try /> */}
 
 
 

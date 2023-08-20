@@ -26,25 +26,31 @@ function Registration() {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(state);
-    setErrorMessage(validate(state))
-    setState({
-      name:"",
-      email:"",
-      password:""
-    })
+    const validateError=validate(state)
+    setErrorMessage(validateError)
+
+    if (Object.keys(validateError).length === 0) {
+      setState({
+        name: "",
+        email: "",
+        password: "",
+      });
+    
+  };
+   
 
 
   }
 
-  const validate = (value) =>{
+  const validate = (values) =>{
     let error = {};
-    if(!value.name){
+    if(!values.name){
       error.name = "please enter a name"
     }
-    if(!value.email) {
+    if(!values.email) {
       error.email = "please enter an email address"
     }
-      
+    return error;
   }
 
   
@@ -68,7 +74,7 @@ function Registration() {
              
            
             />
-            <p>{errorMessage.name}</p>
+           {errorMessage && <p>{errorMessage.name}</p>} 
 
             <br></br>
             <br>
