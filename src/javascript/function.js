@@ -52,37 +52,37 @@ console.log(average(10,20,sum));
 // compare function
 
 
-function compareBy(propertyName){
-    return function (a,b){
-        let x = a[propertyName];
-        let y = b[propertyName];
+// function compareBy(propertyName){
+//     return function (a,b){
+//         let x = a[propertyName];
+//         let y = b[propertyName];
 
-        if(x > y) {
-            return -1;
-        }
-        else if(x < y){
-            return 1;
-        }
-    return 0;
-    }
-}
+//         if(x > y) {
+//             return -1;
+//         }
+//         else if(x < y){
+//             return 1;
+//         }
+//     return 0;
+//     }
+// }
 
-let products = [
-    {name:"samsumg",price:"200"},
-    {name: "vivo" , price: "400"},
-    {name: "iphone" , price: "400000"}
-]
+// let products = [
+//     {name:"samsumg",price:"200"},
+//     {name: "vivo" , price: "400"},
+//     {name: "iphone" , price: "400000"}
+// ]
 
-console.log('Products sorted by Name');
+// console.log('Products sorted by Name');
 
-products.sort(compareBy('name'));
+// products.sort(compareBy('name'));
 
-console.log(products);
+// console.log(products);
 
-console.log('Products sorted by Price');
+// console.log('Products sorted by Price');
 
-products.sort(compareBy('price'));
-console.table(products);
+// products.sort(compareBy('price'));
+// console.table(products);
 
 
 let print = (message)=>{
@@ -117,33 +117,36 @@ console.log(person.age);
 
 // Recursive Function
 
-function countDown(fromNumber){
-    console.log(fromNumber);
-
-    let NextNumber = fromNumber -1 ;
-
-if(NextNumber >=0){
-    countDown(NextNumber);
-
-}
-}
-
-countDown(10);
-
-
-// let countDown = function f (fromNumber) {
+// function countDown(fromNumber){
 //     console.log(fromNumber);
 
-//     let NextNumber  = fromNumber - 1 ;
+//     let NextNumber = fromNumber -1 ;
 
-//     if(NextNumber > 0){
-//         f(NextNumber);
-//     }
+// if(NextNumber >=0){
+//     countDown(NextNumber);
+
+// }
 // }
 
-// let newYear = countDown;
-// countDown = null;
-// newYear(10);
+// countDown(10);
+
+
+let countDown = function f (fromNumber) {
+    console.log(fromNumber);
+
+    let NextNumber  = fromNumber - 1 ;
+
+    if(NextNumber > 0){
+        f(NextNumber);
+    }
+}
+
+let newYear = countDown;
+countDown = null;
+newYear(10);
+
+
+
 
 
 

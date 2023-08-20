@@ -25,6 +25,7 @@ import A from './component/Context/A';
 import Counterr from './Counterr';
 import Nav from './component/State-Api/Nav';
 import Button from './component/reactTutorial/Button';
+import Registration from './component/FormValidation/Registration';
 // import Profile from './component/State-Api/Profile';
 
 
@@ -41,10 +42,12 @@ function App() {
   return (
     <div className="App">
 
+      <Registration />
+
 
 
       
-      <div>
+      {/* <div>
         <h1>Welcome to My App</h1>
         <Button />
         <Button />
@@ -75,7 +78,7 @@ function App() {
         <button  
          onClick={()=>{setData(true)}}
          >Show card</button> 
-       </div>
+       </div> */}
       
     </div>
   );
