@@ -37,6 +37,8 @@ function Registration() {
       });
     
   };
+
+  localStorage.setItem("data",JSON.stringify(state));
    
 
 
