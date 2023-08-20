@@ -13,7 +13,9 @@ function ControlledComponent() {
         padding:"20px",
         boxShadow:"0 0 10px red",
     }
-    const submitData=()=>{
+    const submitData=(event)=>{
+        event.preventDefault();
+        
         console.log(formData);
 
     }

@@ -1,30 +1,30 @@
 
 
 import './App.css';
-import Navbar from './component/Api/Navbar';
-import nav from './component/Api/Navbar';
-import Profile from './component/Api/Profile';
-import Text from './component/Child-Parent/Text';
-import Card from './component/Phases/Card';
-import Table from './component/Phases/Table';
+// import Navbar from './component/Api/Navbar';
+// import nav from './component/Api/Navbar';
+// import Profile from './component/Api/Profile';
+// import Text from './component/Child-Parent/Text';
+// import Card from './component/Phases/Card';
+// import Table from './component/Phases/Table';
 import { useState } from 'react';
-import Counter from './component/Timer/Counter';
-import Dom from './component/Dom/Dom';
-import Form from './component/Form/Form';
-import ControlledComponent from './component/Form/ControlledComponent';
-import ParentChild from './component/REVISION/ParentChild';
-import Input from './component/Parent-Child/Input';
-import ChildText from './component/REVISION/ChildText';
-import A from './component/Context/A';
- import Myapp from './component/reactTutorial/Myapp';
+// import Counter from './component/Timer/Counter';
+// import Dom from './component/Dom/Dom';
+// import Form from './component/Form/Form';
+// import ControlledComponent from './component/Form/ControlledComponent';
+// import ParentChild from './component/REVISION/ParentChild';
+// import Input from './component/Parent-Child/Input';
+// import ChildText from './component/REVISION/ChildText';
+// import A from './component/Context/A';
+//  import Myapp from './component/reactTutorial/Myapp';
 
 
 
 // import Input from './component/Parent-Child/Input';
 
-import Counterr from './Counterr';
-import Nav from './component/State-Api/Nav';
-import Button from './component/reactTutorial/Button';
+// import Counterr from './Counterr';
+// import Nav from './component/State-Api/Nav';
+// import Button from './component/reactTutorial/Button';
 import Registration from './component/FormValidation/Registration';
 // import Profile from './component/State-Api/Profile';
 
@@ -36,7 +36,7 @@ function Greeting(props){
 }
 
 function App() {
-  const [data,setData]=useState("true");
+  // const [data,setData]=useState("true");
 
 
   return (
