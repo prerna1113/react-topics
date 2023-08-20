@@ -45,10 +45,17 @@ function Registration() {
   const validate = (values) =>{
     let error = {};
     if(!values.name){
-      error.name = "please enter a name"
+      error.name = "Name is required"
     }
     if(!values.email) {
-      error.email = "please enter an email address"
+      error.email = " Email address is required"
+    }
+    else if(values.email !=="@" && values.email !== ".com"){
+      error.email ="Please enter a valid email address"
+    }
+
+    if(!values.password) {
+      error.password = "Password is required"
     }
     return error;
   }
@@ -88,7 +95,7 @@ function Registration() {
             onChange={handleInput}
             
             />
-             {/* { <p>{errorMessage.email}</p>}   */}
+             {errorMessage && <p>{errorMessage.email}</p>} 
             <br></br>
             <br></br>
 
@@ -100,7 +107,7 @@ function Registration() {
             onChange={handleInput}
             
             />
-             {/* { <p>{errorMessage.password}</p>}   */}
+              {errorMessage && <p>{errorMessage.password}</p>} 
             <br></br>
             <br></br>
 
