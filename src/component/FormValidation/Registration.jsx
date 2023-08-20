@@ -1,8 +1,22 @@
 
 
-import React from 'react'
+import React, { useState } from 'react'
 
 function Registration() {
+  const [state,setState] = useState({
+    name:"",
+    email: "",
+    password: "",
+  })
+
+  
+  const handleInput = (event) => {
+    event.preventDefault();
+    console.log(state);
+    
+
+
+  }
   return (
     <div style={{
         width:"500px",
@@ -14,9 +28,18 @@ function Registration() {
         <form >
        
             <input 
-            type = "text" 
-            // value = "registration" 
-            placeholder = "please enter your name"
+              type = "text" 
+              placeholder = "please enter your name"
+            onChange={(event)=>
+              {setState({
+                ...state,
+               name:event.target.value
+              }
+            
+            )
+
+            }}
+          
             />
             <br></br>
             <br>
@@ -24,8 +47,13 @@ function Registration() {
 
             <input 
             type = "email"
-            // value= "email"
             placeholder = "please enter your email address"
+            onChange ={(event) =>{
+              setState({
+                ...state,
+                email:event.target.value
+
+            })}}
     
             />
             <br></br>
@@ -33,13 +61,19 @@ function Registration() {
 
             <input 
             type = "password"
-            // value ="password"
             placeholder ="please enter your password"
+            onChange={(event) =>{setState({
+              ...state,
+              password:event.target.value
+            })
+          }}
             />
             <br></br>
             <br></br>
 
             <button
+            onClick={handleInput}
+
             >submit</button>
         </form>
 
