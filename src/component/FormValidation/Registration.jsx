@@ -11,6 +11,8 @@ function Registration() {
 
   const [errorMessage, setErrorMessage] = useState('');
 
+ 
+
   const handleInput =(event) => {
     const {name,value} = event.target;
     setState((prevState)=> ({
@@ -80,6 +82,7 @@ function Registration() {
               placeholder = "please enter your name"
               value={state.name}
               onChange={handleInput}
+             
              
            
             />
